@@ -62,7 +62,7 @@ class Test_DemoClass:
      #Beklenen Sonuç: (https://www.saucedemo.com/checkout-step-two.html ) bu URL de olduğunu görmelisin.      
 
     
-    @pytest.mark.parametrize("firstname,lastname,postalcode",[("Mehtap","Tunç","34102"),("Tunç","Mehtap","12358"),("45556","Tunç","75545")])
+    @pytest.mark.parametrize("firstname,lastname,postalcode",[("Mehmet","ASLANTAŞ","585858"),("ASLANTAŞ","Mehmet","385858"),("345838","Mehmet","046667")])
     def test_continue(self,firstname,lastname,postalcode): 
         usernameInput = WebDriverWait(self.driver,5).until(ec.visibility_of_element_located((By.ID , "user-name")))
         usernameInput.send_keys("standard_user")
@@ -129,14 +129,6 @@ class Test_DemoClass:
 
 
         
-        
-# testClass=Test_DemoClass
-# testClass.setup_method()
-# testClass.teardown_method()
-# testClass.test_continue()
-# testClass.test_openmenu()
-# testClass.test_thankyou_page()
-                        
 
         
         

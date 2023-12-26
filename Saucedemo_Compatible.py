@@ -2,17 +2,17 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
-from selenium.webdriver.support.wait import WebDriverWait #ilgili driverı bekleten yapı
-from selenium.webdriver.support import expected_conditions as ec #beklenen koşullar
+from selenium.webdriver.support.wait import WebDriverWait 
+from selenium.webdriver.support import expected_conditions as ec 
 import pytest
 
 class Test_SauceDemo:
-    def setup_method(self): #her test başlangıcında çalışacak fonk
+    def setup_method(self): 
         self.driver = webdriver.Chrome()
         self.driver.get("https://www.saucedemo.com")
         self.driver.maximize_window()
 
-    def teardown_method(self): # her testinin bitiminde çalışacak fonk
+    def teardown_method(self): 
         self.driver.quit()
 
     
@@ -29,7 +29,7 @@ class Test_SauceDemo:
 
     def test_passwordRequired(self):
         usernameInput = WebDriverWait(self.driver,5).until(ec.visibility_of_element_located((By.ID,"user-name")))
-        usernameInput.send_keys("Mehtap")
+        usernameInput.send_keys("Mehmet")
         passwordInput = WebDriverWait(self.driver,5).until(ec.visibility_of_element_located((By.ID,"password")))
         passwordInput.send_keys("")
         loginButton = self.driver.find_element(By.ID,"login-button")
