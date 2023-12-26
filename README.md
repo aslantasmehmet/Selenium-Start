@@ -1,8 +1,6 @@
 
 Pytest Decorators
 
-PyTest belgelerine göre, şu anda PyTest'te 100'den fazla dekoratör bulunmaktadır. Bu dekoratörler şu kategorilere ayrılabilir:
-
 -Test yürütme davranışını kontrol eden dekoratörler: Bu dekoratörler, testlerin ne zaman ve nasıl yürütüleceğini kontrol eder.
 Örneğin, @pytest.mark.skip dekoratörü testi atlar, @pytest.mark.parametrize dekoratörü test fonksiyonunu farklı girdilerle çalıştırır ve @pytest.mark.xfail dekoratörü testin başarısız olmasını bekler.
 
