@@ -32,7 +32,7 @@ def test_not_implemented(self):
 Dekoratörleri kullanmanın bazı avantajları şunlardır:
 
 - Testleri daha okunabilir ve yönetilebilir hale getirirler.
--Testleri tekrar kullanılabilir hale getirirler.
--Testlerin yürütülmesini daha esnek hale getirirler.
+- Testleri tekrar kullanılabilir hale getirirler.
+- Testlerin yürütülmesini daha esnek hale getirirler.
 
 Dekoratörleri kullanmanın diğer birçok yolu vardır. Daha fazla bilgi için PyTest belgelerine başvurabilirsiniz.
